@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiRP - Contacto</title>
+</head>
+<body>
+    <header>
+        <!--Logo apuntando a la pagina index-->
+        <a href="index.html">
+            <img src="assets/imagenes/logo.png" alt="Logo inicio">
+        </a>
+
+        <!--Menú de la cabecera-->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servidor.html">Servidores</a>
+            <a href="personajes.html">Personajes</a>
+            <a href="grupos.html">Grupos</a>
+            <a href="facciones.html">Facciones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <p>En este formulario, puedes solicitar añadir un personaje, o cambiar datos sobre uno ya existente</p>
+
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" name="usuario" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" required>
+
+                <label for="roleador">Roleador</label>
+                <input type="text" name="roleador" required>
+
+                <label for="servidor">Servidor</label>
+                <input type="text" name="servidor" required>´
+
+                <p>¿Qué vas a hacer?</p>
+                <input type="radio" name="boton" value="añadir" checked> Añadir personaje
+                <input type="radio" name="boton" value="modificar"> Modificar personaje
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
