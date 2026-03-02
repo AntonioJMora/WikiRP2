@@ -1,0 +1,69 @@
+/*Variables e importaciones*/
+:root{
+    --color-primario: #E5383B;
+    --color-secundario: #0B090A;
+    --color-terciario: #BA181B;
+    --color-cuarto: #151313;
+    --color-quinto: #d3d3d3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    color: white;
+}
+html, body{
+    height: 100%;
+}
+
+/*Cabecera*/
+.cabecera{
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-secundario);
+
+}
+
+.enlace_cabecera{
+    width: 10%;
+}
+
+.logo_cabecera{
+    width: 10%;
+    min-width: 80px;
+}
+
+.menu_cabecera{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__opcion{
+    color: var(--color-terciario);
+    font-size: 1.2rem;
+    width: 25%;
+    text-align: center;
+}
+
+/*Cuerpo*/
+.cuerpo{
+    background-color: var(--color-cuarto);
+    padding: 1rem 2rem;
+    min-height: 100%;
+}
+
+h1{
+    color: var(--color-terciario);
+    font-size: xx-large;
+    text-decoration: underline;
+}
