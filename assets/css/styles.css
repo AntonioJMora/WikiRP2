@@ -16,11 +16,21 @@ a{
     text-decoration: none;
 }
 
-p, h1, h2, h3, h4, h5, h6{
+p, h2, h3, h4, h5, h6{
     color: white;
 }
 html, body{
     height: 100%;
+}
+
+h1{
+    color: var(--color-terciario);
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+h2{
+    text-decoration: underline;
 }
 
 /*Cabecera*/
@@ -62,8 +72,108 @@ html, body{
     min-height: 100%;
 }
 
-h1{
+/*Pie*/
+.pie{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-secundario);
+    flex-wrap: wrap;
+}
+
+.pie_parte{
+    width: 25%;
+    font-size: 1rem;
     color: var(--color-terciario);
-    font-size: xx-large;
+}
+
+.pie_parte a{
+    color: var(--color-primario);
+}
+
+
+/*Index*/
+.bienvenida p{
+    padding: 0.5rem;
+}
+
+.principal{
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.articulo_principal{
+    width: 250px;
+    border-style: solid;
+    border-color: var(--color-terciario);
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: var(--color-secundario);
+    text-align: center;
+}
+
+.articulo_principal h3{
     text-decoration: underline;
+}
+
+.articulo_principal a {
+    display: flex;
+    padding: 0.5rem 1rem;
+
+    justify-content: center;
+    border: solid;
+    border-radius: 1rem;
+    background-color: var(--color-terciario);
+
+    color: black;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.articulo_principal a:hover{
+    transform: scale(1.1);
+    background-color: var(--color-primario);
+}
+
+.eventos{
+    display: flex;
+    flex-direction: column;
+}
+
+.eventos p{
+    padding: 0.5rem;
+}
+
+.div_eventos{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.articulo_eventos{
+    background-color: var(--color-quinto);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+
+    border-radius: 1rem;
+}
+
+.articulo_eventos h3{
+    color: black;
 }
