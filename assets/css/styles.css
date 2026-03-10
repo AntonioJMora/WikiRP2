@@ -57,6 +57,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    gap: 0.5rem;
 }
 
 .menu__opcion{
@@ -208,3 +209,6 @@ h2{
     margin: 0 auto;
 }
 
+.articulos_servidores a{
+    color: white;
+}
