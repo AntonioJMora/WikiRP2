@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/imagenes/logo.png">
     <title>WikiRP - Contacto</title>
 </head>
 <body>
-    <header>
+    <header class="cabecera">
         <!--Logo apuntando a la pagina index-->
-        <a href="index.html">
-            <img src="assets/imagenes/logo.png" alt="Logo inicio">
+        <a href="index.html" class="enlace_cabecera">
+            <img src="assets/imagenes/logo.png" alt="Logo inicio" class="logo_cabecera">
         </a>
 
         <!--Menú de la cabecera-->
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="servidor.html">Servidores</a>
-            <a href="personajes.html">Personajes</a>
-            <a href="grupos.html">Grupos</a>
-            <a href="facciones.html">Facciones</a>
-            <a href="contacto.html">Contacto</a>
+        <nav class="menu_cabecera">
+            <ul class="menu_cabecera">
+                <li><a href="index.html" class="menu__opcion">Inicio</a></li>
+                <li><a href="servidor.html" class="menu__opcion">Servidores</a></li>
+                <li><a href="personajes.html" class="menu__opcion">Personajes</a></li>
+                <li><a href="grupos.html" class="menu__opcion">Grupos</a></li>
+                <li><a href="facciones.html" class="menu__opcion">Facciones</a></li>
+                <li><a href="contacto.html" class="menu__opcion">Contacto</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
+    <main class="cuerpo">
         <h1>Contacto</h1>
-        <p>En este formulario, puedes solicitar añadir un personaje, o cambiar datos sobre uno ya existente</p>
+        <p class="cuerpo_p">En este formulario, puedes solicitar añadir un personaje, o cambiar datos sobre uno ya existente</p>
 
         <form>
             <fieldset>
@@ -40,17 +44,19 @@
                 <input type="text" name="roleador" required>
 
                 <label for="servidor">Servidor</label>
-                <input type="text" name="servidor" required>´
+                <input type="text" name="servidor" required>
 
                 <p>¿Qué vas a hacer?</p>
-                <input type="radio" name="boton" value="añadir" checked> Añadir personaje
-                <input type="radio" name="boton" value="modificar"> Modificar personaje
+                <div class="input_button">
+                    <input type="radio" name="boton" value="añadir" checked> Añadir personaje
+                    <input type="radio" name="boton" value="modificar"> Modificar personaje
+                </div>
             </fieldset>
         </form>
     </main>
-    <footer>
-        <p>2025 WikiRP. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:amorac@iesrafaelalberti.es">amorac@iesrafaelalberti.es</a></p>
+    <footer class="pie">
+        <p class="pie_parte">2025 WikiRP. Todos los derechos reservados.</p>
+        <p class="pie_parte">Contacto: <a href="mailto:amorac@iesrafaelalberti.es">amorac@iesrafaelalberti.es</a></p>
     </footer>
 </body>
 </html>
