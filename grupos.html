@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/imagenes/logo.png">
     <title>WikiRP - Grupos</title>
 </head>
 <body>
-    <header>
+    <header class="cabecera">
         <!--Logo apuntando a la pagina index-->
-        <a href="index.html">
-            <img src="assets/imagenes/logo.png" alt="Logo inicio">
+        <a href="index.html" class="enlace_cabecera">
+            <img src="assets/imagenes/logo.png" alt="Logo inicio" class="logo_cabecera">
         </a>
 
         <!--Menú de la cabecera-->
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="servidor.html">Servidores</a>
-            <a href="personajes.html">Personajes</a>
-            <a href="grupos.html">Grupos</a>
-            <a href="facciones.html">Facciones</a>
-            <a href="contacto.html">Contacto</a>
+        <nav class="menu_cabecera">
+            <ul class="menu_cabecera">
+                <li><a href="index.html" class="menu__opcion">Inicio</a></li>
+                <li><a href="servidor.html" class="menu__opcion">Servidores</a></li>
+                <li><a href="personajes.html" class="menu__opcion">Personajes</a></li>
+                <li><a href="grupos.html" class="menu__opcion">Grupos</a></li>
+                <li><a href="facciones.html" class="menu__opcion">Facciones</a></li>
+                <li><a href="contacto.html" class="menu__opcion">Contacto</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
+    <main class="cuerpo">
         <h1>Grupos</h1>
-        <p>En esta página, encontrarás varios grupos criminales de los servidores de rol.</p>
+        <p class="cuerpo_p">En esta página, encontrarás varios grupos criminales de los servidores de rol.</p>
 
         <h2>Diccionario de grupos</h2>
-        <ul>
+        <ul class="diccionario">
             <li><a href="#A">A</a></li>
                 <li><a href="#B">B</a></li>
                 <li><a href="#C">C</a></li>
@@ -58,9 +61,9 @@
                 <li><a href="#Z">Z</a></li>
         </ul>
 
-        <section>
+        <section class="lista_diccionario">
             <h3 id="I">I</h3>
-            <ul>
+            <ul class="elemento_diccionario">
                 <li>
                     <a href="grupos/itp.html">
                         <img src="assets/imagenes/imagenes_grupos/itp-reunion.png" alt="Imagen sobre ITP">
@@ -70,7 +73,7 @@
             </ul>
 
             <h3 id="T">T</h3>
-            <ul>
+            <ul class="elemento_diccionario">
                 <li>
                     <a href="grupos/the-lost.html">
                         <img src="assets/imagenes/imagenes_grupos/The_Lost_logo.png" alt="Logo de The Lost">
@@ -80,7 +83,7 @@
             </ul>
 
             <h3 id="U">U</h3>
-            <ul>
+            <ul class="elemento_diccionario">
                 <li>
                     <a href="grupos/ultimate-extasis.html">
                         <img src="assets/imagenes/imagenes_grupos/the-ultimate.png" alt="Logo de Ultimate Extasis">
@@ -90,9 +93,9 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <p>2025 WikiRP. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:amorac@iesrafaelalberti.es">amorac@iesrafaelalberti.es</a></p>
+    <footer class="pie">
+        <p class="pie_parte">2025 WikiRP. Todos los derechos reservados.</p>
+        <p class="pie_parte">Contacto: <a href="mailto:amorac@iesrafaelalberti.es">amorac@iesrafaelalberti.es</a></p>
     </footer>
 </body>
 </html>
