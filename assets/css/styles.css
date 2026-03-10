@@ -212,3 +212,72 @@ h2{
 .articulos_servidores a{
     color: white;
 }
+
+/*Diccionarios*/
+.diccionario{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+.diccionario a{
+    color: var(--color-terciario);
+    font-weight: 600;
+    transition: transform 0.3s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+.diccionario a:hover{
+    color: var(--color-primario);
+    transform: scale(1.5);
+}
+
+.diccionario li {
+    list-style: none;
+}
+
+.lista_diccionario{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+.lista_diccionario h3{
+    font-size: 1.5rem;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.elemento_diccionario{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.elemento_diccionario li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--color-secundario);
+    padding: 0.5rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.elemento_diccionario li a:hover{
+    transform: scale(1.5);
+    background-color: var(--color-terciario);
+}
+
+.elemento_diccionario img{
+    max-width: 160px;
+    max-height: 160px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    padding: 0.2rem;
+}
+
+.elemento_diccionario span{
+    color: var(--color-quinto);
+    font-weight: bold;
+}
