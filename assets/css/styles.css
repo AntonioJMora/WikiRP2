@@ -1,4 +1,7 @@
 /*Variables e importaciones*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root{
     --color-primario: #E5383B;
     --color-secundario: #0B090A;
@@ -11,6 +14,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 a{
     text-decoration: none;
@@ -312,4 +316,119 @@ fieldset p {
 
 fieldset p, .input_button{
     grid-column: 1 / -1;
+}
+
+/*Página de personaje*/
+.personaje{
+    padding: 0.5;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.enlaces_personaje{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.enlaces_personaje a{
+    color: var(--color-terciario);
+    transition: color 0.5s ease;
+}
+
+.enlaces_personaje a:hover{
+    color: var(--color-primario);
+}
+
+.personaje_contenido{
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.personaje_contenido h1{
+    color: var(--color-quinto);
+}
+
+.personaje_contenido h2{
+    color: var(--color-terciario);
+    font-size: larger;
+}
+
+
+.personaje_tabla{
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.personaje_tabla th,
+.personaje_tabla td {
+    border: 1px solid var(--color-terciario);
+    padding: 0.8rem;
+    text-align: left;
+    color: var(--color-quinto);
+}
+.personaje_tabla th {
+    background-color: var(--color-terciario);
+    color: black;
+    text-align: center;
+}
+.personaje_tabla img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+}
+.personaje_tabla a{
+    color: var(--color-quinto);
+}
+
+.personaje_texto{
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.personaje_texto a{
+    color: var(--color-primario);
+    transition: color 0.5s ease;
+}
+
+.personaje_texto a:hover{
+    color: var(--color-terciario);
+}
+
+.personaje_contenido article{
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    text-align: justify;
+}
+
+.personaje_contenido article ul{
+    list-style: none;
+    padding-left: 0.15rem;
+}
+
+.personaje_contenido li::before{
+    content: "- ";
+    font-weight: bold;
+}
+
+.personaje_contenido article span{
+    font-weight: bold;
+    text-decoration: underline;
 }
