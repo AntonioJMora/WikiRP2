@@ -50,4 +50,6 @@
 
 - Aquí puedes encontrar la demo de GitHub pages: https://antoniojmora.github.io/WikiRP2/index.html
 
+- Las media query creadas son para pantallas pequeñas y móviles, estas se encuentran al final del todo
+
 

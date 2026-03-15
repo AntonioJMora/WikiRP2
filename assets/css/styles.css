@@ -517,7 +517,7 @@ fieldset p, .input_button{
         max-height: 500px;
     }
 
-    /* Menú de navegación: vertical en móviles */
+    /* Menú de navegación */
     .menu_cabecera {
         width: 100%;
         flex-direction: column;
@@ -533,8 +533,6 @@ fieldset p, .input_button{
         padding: 0.4rem 0;
     }
 
-
-    /* Texto más legible en móviles */
     h1 {
         font-size: 1.8rem;
     }
@@ -582,7 +580,6 @@ fieldset p, .input_button{
     }
 }
 
-/* ================== Media Query para tablets (481px - 768px) ================== */
 /* ================== Media Query para tablets (481px - 768px) ================== */
 @media (min-width: 481px) and (max-width: 768px) {
 
