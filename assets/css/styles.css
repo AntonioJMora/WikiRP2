@@ -582,3 +582,128 @@ fieldset p, .input_button{
     }
 }
 
+/* ================== Media Query para tablets (481px - 768px) ================== */
+/* ================== Media Query para tablets (481px - 768px) ================== */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* Cabecera y menú */
+    .cabecera {
+        flex-wrap: wrap;
+        padding: 0.5rem 1rem;
+    }
+
+    .menu_cabecera {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+
+    .menu__opcion {
+        width: auto;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .enlace_cabecera {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo_cabecera {
+        width: 10%;
+        min-width: 80px;
+    }
+
+    /* Cuerpo */
+    .cuerpo, .cabecera, .pie {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Artículos principales */
+    .articulo_principal {
+        width: 45%;
+        max-width: 100%;
+    }
+
+    /* Eventos */
+    .div_eventos {
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .articulo_eventos {
+        width: 70%;
+    }
+
+    /* Diccionario */
+    .diccionario {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        justify-content: flex-start;
+    }
+
+    .diccionario a {
+        flex: 0 0 auto;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .elemento_diccionario img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    /* Formulario: 2 columnas */
+    fieldset {
+        grid-template-columns: auto 1fr;
+    }
+
+    fieldset p, .input_button {
+        grid-column: 1 / -1;
+    }
+
+    /* Pie */
+    .pie {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .pie_parte {
+        width: 45%;
+        text-align: center;
+    }
+
+    /* Servidores */
+    .articulos_servidores {
+        width: 90%;
+    }
+
+    .articulos_servidores img {
+        width: 70%;
+    }
+
+    /* Personaje */
+    .personaje {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personaje_tabla {
+        width: 100%;
+    }
+
+    .personaje_tabla img {
+        max-width: 200px;
+    }
+
+    .personaje_contenido {
+        width: 100%;
+    }
+}
+
