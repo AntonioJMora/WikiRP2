@@ -201,6 +201,10 @@ h2{
     align-items: center;
 }
 
+.servidores_section h1, p{
+    width: 100%;
+}
+
 .articulos_servidores{
     display: flex;
     flex-direction: column;
