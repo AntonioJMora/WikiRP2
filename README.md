@@ -44,4 +44,5 @@
     Las demás páginas no han podido ser terminadas pero estás muestran todo o casi todo lo pedido.
 
 ## Fase 2
-
+### Validacion de css
+![](assets/imagenes/w3c/Validacion_css.png)
