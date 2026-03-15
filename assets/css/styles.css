@@ -704,3 +704,44 @@ fieldset p, .input_button{
     }
 }
 
+/* Banner éxito */
+.banner_exito {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-terciario);
+    color: var(--color-quinto);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    animation: slideDown 0.4s ease;
+}
+
+.banner_cerrar {
+    background: none;
+    border: none;
+    color: var(--color-quinto);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 0.3rem;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to   { transform: translateY(0); }
+}
+
+.banner_salida {
+    animation: slideUp 0.4s ease forwards;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-100%); }
+}
