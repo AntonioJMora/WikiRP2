@@ -490,3 +490,95 @@ fieldset p, .input_button{
     font-weight: bold;
     text-decoration: underline;
 }
+
+/*Responsive*/
+/* ================== Media Query para móviles (≤480px) ================== */
+@media (max-width: 480px) {
+
+    /* Diccionario: un elemento por fila */
+    .elemento_diccionario li {
+        flex: 1 1 100%;   
+        max-width: 100%;
+    }
+
+    /* Artículos principales*/
+    .articulo_principal {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Eventos*/
+    .articulo_eventos {
+        width: 90%;
+    }
+
+    .div_eventos {
+        height: auto;
+        max-height: 500px;
+    }
+
+    /* Menú de navegación: vertical en móviles */
+    .menu_cabecera {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0;
+    }
+
+    .menu__opcion {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.4rem 0;
+    }
+
+
+    /* Texto más legible en móviles */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    .diccionario {
+        display: flex;
+        flex-wrap: wrap;       
+        gap: 0.3rem;
+        justify-content: flex-start; 
+    }
+
+    .diccionario a {
+        flex: 0 0 auto; 
+        padding: 0.2rem 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .pie {
+        flex-direction: column;  
+        align-items: center;    
+        gap: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .pie_parte {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Contacto*/
+    fieldset {
+        grid-template-columns: 1fr;
+    }
+
+    fieldset label {
+        margin-top: 0.5rem;
+    }
+}
+

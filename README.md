@@ -44,5 +44,10 @@
     Las demás páginas no han podido ser terminadas pero estás muestran todo o casi todo lo pedido.
 
 ## Fase 2
-### Validacion de css
-![](assets/imagenes/w3c/Validacion_css.png)
+- El css se encuentra en [styles.css](assets/css/styles.css)
+- Esta es la captura del W3C del css
+    ![](assets/imagenes/w3c/Validacion_css.png)
+
+- Aquí puedes encontrar la demo de GitHub pages: https://antoniojmora.github.io/WikiRP2/index.html
+
+
