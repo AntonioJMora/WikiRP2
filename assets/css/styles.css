@@ -745,3 +745,192 @@ fieldset p, .input_button{
     from { transform: translateY(0); }
     to   { transform: translateY(-100%); }
 }
+
+/* ── Gestor de grupos ── */
+#gestor_grupos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+#gestor_grupos h2 {
+    width: 100%;
+}
+
+#form_grupos {
+    width: 80%;
+    background-color: var(--color-secundario);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+}
+
+#form_grupos textarea {
+    grid-column: 2 / -1;
+    resize: vertical;
+}
+
+#form_grupos select {
+    grid-column: 2 / -1;
+}
+
+.filtros_grupos {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filtro_grp_btn {
+    padding: 0.4rem 1rem;
+    border: 2px solid var(--color-terciario);
+    border-radius: 2rem;
+    background: transparent;
+    color: var(--color-terciario);
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filtro_grp_btn:hover,
+.filtro_grp_btn.activo_filtro {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+}
+
+#galeria_grupos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.card_grupo {
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-terciario);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card_grupo_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.card_grupo img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card_grupo_servidor {
+    font-size: 0.85rem;
+    color: var(--color-quinto);
+    font-style: italic;
+}
+
+.badge_Activo   { 
+    background-color: #2a9d2a; 
+    color: var(--color-quinto); 
+    padding: 0.2rem 0.7rem; 
+    border-radius: 1rem; 
+    font-size: 0.8rem; 
+    font-weight: bold; 
+}
+
+.badge_Disuelto { 
+    background-color: #c0392b; 
+    color: var(--color-quinto); 
+    padding: 0.2rem 0.7rem; 
+    border-radius: 1rem; 
+    font-size: 0.8rem; 
+    font-weight: bold; 
+}
+
+.btn_eliminar_grupo {
+    margin-top: auto;
+    padding: 0.3rem 0.8rem;
+    background-color: var(--color-terciario);
+    color: var(--color-quinto);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn_eliminar_grupo:hover {
+    background-color: var(--color-primario);
+    transform: scale(1.05);
+}
+
+/* Validación */
+.error_msg {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    grid-column: 1 / -1;
+}
+
+.input_error { border: 2px solid #e74c3c !important; }
+.input_ok    { border: 2px solid #2a9d2a !important; }
+
+#btn_añadir_grupo {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-terciario);
+    color: var(--color-quinto);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn_añadir_grupo:hover {
+    background-color: var(--color-primario);
+    transform: scale(1.05);
+}
+#form_grupos label, #form_grupos legend {
+    color: var(--color-quinto);
+}
+
+@media (max-width: 480px) {
+    #form_grupos fieldset {
+        grid-template-columns: 1fr;
+    }
+
+    #form_grupos textarea,
+    #form_grupos select {
+        grid-column: 1;
+    }
+
+    #form_grupos {
+        width: 100%;
+    }
+
+    .card_grupo {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #form_grupos fieldset {
+        grid-template-columns: auto 1fr;
+    }
+
+    #form_grupos textarea,
+    #form_grupos select {
+        grid-column: 2 / -1;
+    }
+
+    #form_grupos {
+        width: 95%;
+    }
+}
