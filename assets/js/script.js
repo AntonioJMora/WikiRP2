@@ -217,7 +217,7 @@ let grupos = [
         descripcion: "The Lost MC es un grupo motero que se mueve por la Ruta 68, en Sandy. Estos estaban asentados en unas carabanas al sur del lago. En su momento de elevarse su presidente fue James Scott, más conocido como M.",
         servidor: "InfamesRP",
         estado: "Disuelto",
-        foto: "assets/imagenes/imagenes_grupos/The_Lost_Logo.png"
+        foto: "assets/imagenes/imagenes_grupos/The_Lost_logo.png"
     }
 ];
 let filtroGrupos = "todos";
