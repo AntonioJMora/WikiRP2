@@ -53,6 +53,10 @@
 - Las media query creadas son para pantallas pequeñas y móviles, estas se encuentran al final del todo
 
 ## Fase 3
+- El js se encuentra en [script.js](assets/js/script.js)
 
+### Funcionalidades
 
+- La primera funcionalidad es en la página de [contacto.html](contacto.html). En esta, se añaden datos mediante JS al formulario, dando dos opciones, modificar datos de un personaje que ya haya en la página, o añadir uno nuevo.
 
+- La segunda es en [grupos.html](grupos.html). En esta lo que se hace es una interaccion directa con la página web, pudiendo añadir en una lista de cards grupos nuevos, indicando si estan activos, disueltos, o en que servidor está. Además, se podrá añadir una imagen. Estos se podrán añadir o eliminar. Aunque los que añada el usuario se eliminarán al recargar la página, si se quisieran guardar, se podría poner un localStorage para que guarde los datos en el navegador.
